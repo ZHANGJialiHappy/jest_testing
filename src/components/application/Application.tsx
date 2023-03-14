@@ -1,9 +1,16 @@
 function Application() {
   return (
-    <form>
+    <>
+      <h1>Application Form</h1>
+      <h2>Section 2</h2>
+        <form>
         <div>
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name"/>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name"/>
+        </div>
+        <div>
+          <label htmlFor="gender">Gender</label>
+          <textarea id="gender" name="gender"/>
         </div>
         <div>
         <label>Job location</label>
@@ -19,6 +26,8 @@ function Application() {
         </div>
         <button>Submit</button>
     </form>
+
+    </>
   )
 }
 
