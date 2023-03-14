@@ -3,17 +3,23 @@ function Application() {
     <>
       <h1>Application Form</h1>
       <h2>Section 2</h2>
+      <p>please fill them out</p>
+      <div data-testid="custom-element">Custom HTML element</div>
         <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name"/>
+          <input 
+          type="text" 
+          id="name" 
+          placeholder="Fullname"
+          value="Jiali"/>
         </div>
         <div>
           <label htmlFor="gender">Gender</label>
           <textarea id="gender" name="gender"/>
         </div>
         <div>
-        <label>Job location</label>
+        <label htmlFor="job-location">Name</label>
         <select id="job-location">
             <option value="US">United States</option>
         </select> 
