@@ -14,7 +14,7 @@ describe("Application", ()=>{
     });
     expect(sectionHeading).toBeInTheDocument();
 
-    const paragraphElement = screen.getByText('please fill them out');
+    const paragraphElement = screen.getByText((content)=>content.startsWith('please'));
     expect(paragraphElement).toBeInTheDocument();
 
     const customElement = screen.getByTestId('custom-element');
